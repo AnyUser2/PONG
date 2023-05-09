@@ -40,8 +40,8 @@
 
     function resizeCanva(){
         limpiezaBaraIzquierda();
-        cnv.Width = window.innerWidth;
-        cnv.Height = window.innerHeight;
+        cnv.width = window.innerWidth;
+        cnv.height = window.innerHeight;
         impresionBarraIzquierda();
     }
 
@@ -50,15 +50,15 @@
 
     function limpiezaBaraIzquierda(){
 
-        pincel.clearRect(cnv.Width-700,40,50,50);
+        pincel.clearRect(cnv.width-700,40,50,50);
 
     }
 
     function impresionBarraIzquierda(){
         
-        pincel.fillStyle = "red";
+        pincel.fillStyle = "white";
         pincel.beginPath();
-        pincel.fillRect(cnv.Width-700,40,50,50);
+        pincel.fillRect(cnv.width-700,40,50,50);
         pincel.fill();
 
     }
